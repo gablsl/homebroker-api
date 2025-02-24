@@ -19,7 +19,7 @@ export class AssetsController {
     return assets.map((asset) => new AssetsPresenter(asset));
   }
 
-  @Get(':id')
+  @Get(':symbol')
   async findOne(@Param('symbol') symbol: string) {
     const asset = await this.assetsService.findOne(symbol);
     return new AssetsPresenter(asset!);

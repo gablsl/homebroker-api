@@ -7,9 +7,9 @@ export class AssetsPresenter {
     return {
       _id: this.asset._id,
       name: this.asset.name,
-      Symbol: this.asset.symbol,
+      symbol: this.asset.symbol,
       price: this.asset.price,
-      imageUrl: `http://localhost:9000/${this.asset.image}`,
+      image_url: `http://localhost:9000/${this.asset.image}`,
     };
   }
 }
